@@ -1,4 +1,20 @@
-@import 'variables.less';
+// @import 'variables.less';
+//
+// @import 'global.less';
+// @import 'blocks/page-header.less';
+.page-header{
+  background-color: pink;
+  padding: 1em;
 
-@import 'global.less';
-@import 'blocks/page-header.less';
+&__inner{
+  background-color: #000;
+}
+
+@media(min-width: 480px){
+  display: none;
+}
+}
+
+.mixin{
+  .page-header();
+}
